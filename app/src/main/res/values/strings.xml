@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Individual8m4</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="ir">Ir a segunda actividad</string>
+    <string name="salir">Salir</string>
+    <string name="bienvenida2">Bienvenido a la segunda actividad</string>
+    <string name="irsitio">Ir al sitio web</string>
+    <string name="volver">Volver</string>
+</resources>
