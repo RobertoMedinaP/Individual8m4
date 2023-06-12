@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.individual8m4.databinding.Activity2Binding;
 
 public class Activity2 extends AppCompatActivity {
+
+
+    private String TAG= Activity2.class.getSimpleName();
 
     private Activity2Binding binding;
 
@@ -44,4 +48,45 @@ public class Activity2 extends AppCompatActivity {
 
     }
 
+
+    //Logs para ciclo de vida
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "OnStart");
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "OnResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "OnPause");
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "OnStop");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "OnRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "OnDestroy");
+    }
 }
+
